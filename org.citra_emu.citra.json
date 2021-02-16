@@ -10,8 +10,8 @@
         "env": {
             "CI": "1",
             "GITHUB_ACTIONS": "1",
-            "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
-            "GIT_TAG_NAME": "nightly-1712"
+            "GITHUB_REPOSITORY": "citra-emu/citra-canary",
+            "GIT_TAG_NAME": "canary-1976"
         }
     },
     "finish-args": [
@@ -53,13 +53,13 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/citra-emu/citra-nightly.git",
-                    "tag": "nightly-1712",
-                    "commit": "324e88d6e08ab8bc95671e6ba8011fc8812ac2c9",
+                    "url": "https://github.com/citra-emu/citra-canary.git",
+                    "tag": "canary-1976",
+                    "commit": "39265312b4ad9f2f311e47dbda8970b0b2b3e3c5",
                     "disable-shallow-clone": true,
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^(nightly-\\d+)$",
+                        "tag-pattern": "^(canary-\\d+)$",
                         "is-main-source": true
                     }
                 },
@@ -74,7 +74,9 @@
                 },
                 {
                     "type": "shell",
-                    "commands": ["cp -v compatibility_list.json dist/compatibility_list/compatibility_list.json"]
+                    "commands": [
+                        "cp -v compatibility_list.json dist/compatibility_list/compatibility_list.json"
+                    ]
                 }
             ]
         }
