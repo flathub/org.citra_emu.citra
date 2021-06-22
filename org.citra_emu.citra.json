@@ -73,7 +73,7 @@
                     "dest-filename": "compatibility_list.json"
                 },
                 {
-                    "type": "script",
+                    "type": "shell",
                     "commands": ["cp", "-v", "compatibility_list.json", "dist/compatibility_list/compatibility_list.json"]
                 }
             ]
