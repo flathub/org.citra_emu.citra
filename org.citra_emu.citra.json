@@ -24,6 +24,7 @@
         "--filesystem=host:ro"
     ],
     "modules": [
+        "shared-modules/libusb/libusb.json",
         {
             "name": "citra",
             "buildsystem": "cmake-ninja",
