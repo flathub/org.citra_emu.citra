@@ -74,7 +74,7 @@
                 },
                 {
                     "type": "shell",
-                    "commands": ["cp", "-v", "compatibility_list.json", "dist/compatibility_list/compatibility_list.json"]
+                    "commands": ["cp -v compatibility_list.json dist/compatibility_list/compatibility_list.json"]
                 }
             ]
         }
