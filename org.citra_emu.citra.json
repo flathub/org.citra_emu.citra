@@ -11,7 +11,7 @@
             "CI": "1",
             "GITHUB_ACTIONS": "1",
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
-            "GIT_TAG_NAME": "nightly-1715"
+            "GIT_TAG_NAME": "nightly-1720"
         }
     },
     "finish-args": [
@@ -54,8 +54,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/citra-emu/citra-nightly.git",
-                    "tag": "nightly-1715",
-                    "commit": "afed4953bccfb9b39558cf196492c2558ca1f109",
+                    "tag": "nightly-1720",
+                    "commit": "c40871f126a5942b16b8b240d256b59e25b5e7ae",
                     "disable-shallow-clone": true,
                     "x-checker-data": {
                         "type": "git",
