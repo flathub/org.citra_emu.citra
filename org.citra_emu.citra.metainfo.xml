@@ -31,22 +31,8 @@
     <screenshot>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/35-Pok%C3%A9mon%20ORAS.png</screenshot>
   </screenshots>
   <releases>
-    <release version="nightly-1732" date="2021-11-03"/>
-    <release version="nightly-1728" date="2021-10-16"/>
-    <release version="nightly-1727" date="2021-10-11"/>
-    <release version="nightly-1724" date="2021-09-22"/>
-    <release version="nightly-1720" date="2021-08-05"/>
-    <release version="nightly-1715" date="2021-07-06"/>
-    <release version="nightly-1714" date="2021-06-24"/>
-    <release version="nightly-1712" date="2021-06-22"/>
-    <release version="nightly-1711" date="2021-05-17"/>
-    <release version="nightly-1708" date="2021-05-13"/>
-    <release version="nightly-1707" date="2021-05-11"/>
-    <release version="nightly-1705" date="2021-04-30"/>
-    <release version="nightly-1703" date="2021-04-24"/>
-    <release version="nightly-1697" date="2021-04-03"/>
-    <release version="nightly-1696" date="2021-03-06"/>
-    <release date="2021-02-21" version="nightly-1695"/>
+    <release version="canary-2003" date="2021-11-03"/>
+    <release version="canary-1992" date="2021-09-20"/>
   </releases>
   <categories>
     <category>Games</category>
