@@ -1,7 +1,7 @@
 {
     "app-id": "org.citra_emu.citra",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15",
+    "runtime-version": "5.15-21.08",
     "sdk": "org.kde.Sdk",
     "command": "citra-qt",
     "rename-desktop-file": "citra.desktop",
@@ -54,8 +54,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/citra-emu/citra-canary.git",
-                    "tag": "canary-1992",
-                    "commit": "9a40f51551f6774a0ec868b0b0bdf9e51a4aa2fc",
+                    "tag": "canary-2003",
+                    "commit": "c2ae29257751f6d96e6e8e37dadc4ac76e110886",
                     "disable-shallow-clone": true,
                     "x-checker-data": {
                         "type": "git",
