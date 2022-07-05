@@ -11,7 +11,7 @@
             "CI": "1",
             "GITHUB_ACTIONS": "1",
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
-            "GIT_TAG_NAME": "nightly-1770"
+            "GIT_TAG_NAME": "nightly-1772"
         }
     },
     "finish-args": [
