@@ -55,8 +55,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/citra-emu/citra-nightly.git",
-                    "tag": "nightly-1788",
-                    "commit": "030ecaa83c825bf4c91915d629adca2dadb9aaac",
+                    "tag": "nightly-1796",
+                    "commit": "b05b5b3bd8b973846b62dfe51b84952da756232b",
                     "disable-shallow-clone": true,
                     "x-checker-data": {
                         "type": "git",
