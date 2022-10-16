@@ -14,20 +14,15 @@ const check_query = `query($name: String!){
   }
 }`;
 
-const close_pr_mutation = `mutation cpm_{num} {
-  closePullRequest(input: {pullRequestId: "{id}"}) { clientMutationId }
-}`;
-
 async function closePullRequests(should_close, github) {
   if (should_close.length > 0) {
     console.log("Closing other pull requests ...");
-    let mut = "";
+    let mut = "mutation cpm {";
     for (let i = 0; i < should_close.length; i++) {
-      mut += close_pr_mutation
-        .replace("{num}", i)
-        .replace("{id}", should_close[i].id);
+      mut += `  _${i}: closePullRequest(input: {pullRequestId: "${should_close[i].id}"}) { clientMutationId }`;
       mut += "\n";
     }
+    mut += "}\n";
     await github.graphql(mut);
     console.log("Pull requests closed.");
   }
