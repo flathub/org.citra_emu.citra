@@ -39,6 +39,7 @@
                 "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF",
                 "-DENABLE_FFMPEG_VIDEO_DUMPER=ON",
                 "-DUSE_SYSTEM_SDL2=ON",
+                "-DCMAKE_POLICY_DEFAULT_CMP0069=NEW",
                 "-DENABLE_FDK=ON"
             ],
             "cleanup": [
@@ -56,14 +57,14 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/citra-emu/citra-nightly.git",
-                    "tag": "nightly-1821",
-                    "commit": "06a9f69d88253c916b1fc4e8b62ca50f9e04f032",
-                    "disable-shallow-clone": true,
+                    "type": "archive",
+                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1821/citra-unified-source-20221214-06a9f69.tar.xz",
+                    "sha256": "4fd90f3ec24aeaaafe450e72ec531eea8880bc37cb1d113976fd0904c01cfee8",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^(nightly-\\d+)$",
+                        "type": "json",
+                        "url": "https://api.github.com/repos/citra-emu/citra-nightly/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | .browser_download_url | match(\"https://.+citra-unified-source-.+.xz$\") | .string",
                         "is-main-source": true
                     }
                 },
@@ -76,15 +77,8 @@
                     "path": "org.citra_emu.citra.svg"
                 },
                 {
-                    "type": "file",
-                    "path": "compatibility_list.json",
-                    "dest-filename": "compatibility_list.json"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "cp -v compatibility_list.json dist/compatibility_list/compatibility_list.json"
-                    ]
+                    "type": "patch",
+                    "path": "unified-source-compat.patch"
                 }
             ]
         }
