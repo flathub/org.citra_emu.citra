@@ -16,8 +16,8 @@
     },
     "finish-args": [
         "--device=all",
-        "--socket=x11",
         "--socket=wayland",
+        "--socket=fallback-x11",
         "--socket=pulseaudio",
         "--share=network",
         "--share=ipc",
@@ -25,6 +25,7 @@
     ],
     "modules": [
         "shared-modules/libusb/libusb.json",
+        "shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json",
         {
             "name": "citra",
             "buildsystem": "cmake-ninja",
@@ -32,10 +33,12 @@
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON",
+                "-DENABLE_LTO=ON",
                 "-DENABLE_QT_TRANSLATION=ON",
                 "-DCITRA_ENABLE_COMPATIBILITY_REPORTING=ON",
-                "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=ON",
+                "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF",
                 "-DENABLE_FFMPEG_VIDEO_DUMPER=ON",
+                "-DUSE_SYSTEM_SDL2=ON",
                 "-DENABLE_FDK=ON"
             ],
             "cleanup": [
