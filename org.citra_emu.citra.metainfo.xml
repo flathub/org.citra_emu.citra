@@ -18,12 +18,13 @@
     <id>citra.desktop</id>
   </provides>
   <url type="homepage">https://citra-emu.org/</url>
-  <url type="translate">https://www.transifex.com/projects/p/citra</url>
+  <url type="translate">https://www.transifex.com/citra/citra/</url>
   <url type="donation">https://citra-emu.org/donate/</url>
   <url type="bugtracker">https://github.com/citra-emu/citra/issues</url>
   <url type="faq">https://citra-emu.org/wiki/faq/</url>
   <url type="help">https://citra-emu.org/wiki/home/</url>
   <url type="contact">https://community.citra-emu.org/</url>
+  <url type="contribute">https://github.com/citra-emu/citra/wiki/Contributing#contributing</url>
   <screenshots>
     <screenshot type="default">https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/01-Super%20Mario%203D%20Land.jpg</screenshot>
     <screenshot>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/02-Mario%20Kart%207.jpg</screenshot>

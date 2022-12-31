@@ -32,7 +32,7 @@ async function incrementVersion() {
   const manifest = fs.readFileSync("org.citra_emu.citra.json", {
     encoding: "utf8",
   });
-  const version = /"tag": "nightly-(\d+)/.exec(manifest)[1];
+  const version = /"url": .+?download\/nightly-(\d+)/.exec(manifest)[1];
   const new_manifest = manifest.replace(/nightly-[0-9]+/, `nightly-${version}`);
   fs.writeFileSync("org.citra_emu.citra.json", new_manifest);
 }
