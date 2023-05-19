@@ -11,7 +11,7 @@
             "CI": "1",
             "GITHUB_ACTIONS": "1",
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
-            "GITHUB_REF_NAME": "nightly-1907"
+            "GITHUB_REF_NAME": "nightly-1908"
         }
     },
     "finish-args": [
@@ -78,8 +78,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1907/citra-unified-source-20230516-a12058e.tar.xz",
-                    "sha256": "4aafb61ebcda62a8c34794372d204ce6e95432bb29efe369efebf0fb8fb8a23c",
+                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1908/citra-unified-source-20230519-110063a.tar.xz",
+                    "sha256": "fa02a302f7c4170c7afb5d1781d27eeb1c5a0300d3900cc8664585bb0142a9b3",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/citra-emu/citra-nightly/releases/latest",
