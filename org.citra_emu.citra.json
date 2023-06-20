@@ -1,7 +1,7 @@
 {
     "app-id": "org.citra_emu.citra",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.4",
+    "runtime-version": "6.5",
     "sdk": "org.kde.Sdk",
     "command": "citra-qt",
     "rename-desktop-file": "citra.desktop",
@@ -57,10 +57,8 @@
                 "-DENABLE_QT_TRANSLATION=ON",
                 "-DCITRA_ENABLE_COMPATIBILITY_REPORTING=ON",
                 "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF",
-                "-DENABLE_FFMPEG_VIDEO_DUMPER=ON",
                 "-DUSE_SYSTEM_SDL2=ON",
-                "-DCMAKE_POLICY_DEFAULT_CMP0069=NEW",
-                "-DENABLE_FDK=ON"
+                "-DCMAKE_POLICY_DEFAULT_CMP0069=NEW"
             ],
             "cleanup": [
                 "/share/man",
@@ -95,10 +93,6 @@
                 {
                     "type": "file",
                     "path": "org.citra_emu.citra.svg"
-                },
-                {
-                    "type": "patch",
-                    "path": "unified-source-compat.patch"
                 }
             ]
         }
