@@ -15,7 +15,7 @@
   <launchable type="desktop-id">org.citra_emu.citra.desktop</launchable>
   <provides>
     <binary>citra-qt</binary>
-    <id>citra.desktop</id>
+    <id>citra-qt.desktop</id>
   </provides>
   <url type="homepage">https://citra-emu.org/</url>
   <url type="translate">https://www.transifex.com/citra/citra/</url>
