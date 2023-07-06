@@ -4,7 +4,7 @@
     "runtime-version": "6.5",
     "sdk": "org.kde.Sdk",
     "command": "citra-qt",
-    "rename-desktop-file": "citra.desktop",
+    "rename-desktop-file": "citra-qt.desktop",
     "rename-icon": "citra",
     "build-options": {
         "env": {
@@ -66,8 +66,8 @@
             ],
             "post-install": [
                 "install -Dm644 ../org.citra_emu.citra.metainfo.xml /app/share/appdata/org.citra_emu.citra.metainfo.xml",
-                "desktop-file-install --dir=/app/share/applications ../dist/citra.desktop",
-                "echo 'StartupWMClass=citra-qt' >> /app/share/applications/citra.desktop",
+                "desktop-file-install --dir=/app/share/applications ../dist/citra-qt.desktop",
+                "echo 'StartupWMClass=citra-qt' >> /app/share/applications/citra-qt.desktop",
                 "install -Dm644 ../org.citra_emu.citra.svg /app/share/icons/hicolor/scalable/apps/citra.svg",
                 "install -Dm644 ../dist/icon.png /app/share/icons/hicolor/512x512/apps/citra.png",
                 "mv /app/share/mime/packages/citra.xml /app/share/mime/packages/org.citra_emu.citra.xml",
