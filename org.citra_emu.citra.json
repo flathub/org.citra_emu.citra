@@ -62,7 +62,7 @@
             "name": "boost",
             "buildsystem": "simple",
             "build-commands": [
-                "./bootstrap.sh --with-libraries=context,container,system,headers,serialization,iostreams",
+                "./bootstrap.sh --with-libraries=container,locale,headers,serialization,iostreams",
                 "./b2 -j $FLATPAK_BUILDER_N_JOBS install --prefix=/app"
             ],
             "sources": [
@@ -86,6 +86,8 @@
                 "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF",
                 "-DUSE_SYSTEM_SDL2=ON",
                 "-DUSE_SYSTEM_BOOST=ON",
+                "-DUSE_SYSTEM_OPENSSL=ON",
+                "-DUSE_SYSTEM_LIBUSB=ON",
                 "-DCMAKE_POLICY_DEFAULT_CMP0069=NEW"
             ],
             "cleanup": [
@@ -121,6 +123,10 @@
                 {
                     "type": "file",
                     "path": "org.citra_emu.citra.svg"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-cmake-fix-USE_SYSTEM_BOOST-behavior.patch"
                 }
             ]
         }
