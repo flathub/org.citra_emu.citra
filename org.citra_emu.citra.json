@@ -23,9 +23,21 @@
         "--share=ipc",
         "--filesystem=host:ro"
     ],
+    "cleanup": [
+        "/include",
+        "/bin/glslangValidator",
+        "/bin/zip*",
+        "/bin/zstd*",
+        "/lib/pkg-config",
+        "/share/doc",
+        "/share/man",
+        "/src",
+        "*.a",
+        "*.la"
+    ],
     "modules": [
         "shared-modules/libusb/libusb.json",
-        "shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json",
+        "shared-modules/SDL2/SDL2-with-libdecor.json",
         {
             "name": "glslang",
             "buildsystem": "cmake-ninja",
@@ -47,6 +59,21 @@
             ]
         },
         {
+            "name": "boost",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./bootstrap.sh --with-libraries=context,container,system,headers,serialization,iostreams",
+                "./b2 -j $FLATPAK_BUILDER_N_JOBS install --prefix=/app"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
+                    "sha256": "71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa"
+                }
+            ]
+        },
+        {
             "name": "citra",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -58,6 +85,7 @@
                 "-DCITRA_ENABLE_COMPATIBILITY_REPORTING=ON",
                 "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF",
                 "-DUSE_SYSTEM_SDL2=ON",
+                "-DUSE_SYSTEM_BOOST=ON",
                 "-DCMAKE_POLICY_DEFAULT_CMP0069=NEW"
             ],
             "cleanup": [
