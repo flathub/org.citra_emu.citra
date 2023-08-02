@@ -83,6 +83,7 @@
                 "-DENABLE_LTO=ON",
                 "-DENABLE_QT_TRANSLATION=ON",
                 "-DCITRA_ENABLE_COMPATIBILITY_REPORTING=ON",
+                "-DCITRA_WARNINGS_AS_ERRORS=OFF",
                 "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF",
                 "-DUSE_SYSTEM_SDL2=ON",
                 "-DUSE_SYSTEM_BOOST=ON",
