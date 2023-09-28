@@ -32,6 +32,7 @@
     <screenshot>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/35-Pok%C3%A9mon%20ORAS.png</screenshot>
   </screenshots>
   <releases>
+    <release version="nightly-1997" date="2023-09-28"/>
     <release version="nightly-1996" date="2023-09-24"/>
     <release version="nightly-1995" date="2023-09-23"/>
     <release version="nightly-1994" date="2023-09-20"/>
