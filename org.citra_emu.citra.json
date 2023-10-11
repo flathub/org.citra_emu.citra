@@ -20,7 +20,8 @@
         "--socket=pulseaudio",
         "--share=network",
         "--share=ipc",
-        "--filesystem=host:ro"
+        "--filesystem=host:ro",
+        "--filesystem=xdg-run/app/com.discordapp.Discord:ro"
     ],
     "modules": [
         "shared-modules/libusb/libusb.json",
@@ -53,6 +54,7 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DENABLE_QT_TRANSLATION=ON",
                 "-DCITRA_ENABLE_COMPATIBILITY_REPORTING=ON",
+                "-DUSE_DISCORD_PRESENCE=ON",
                 "-DENABLE_COMPATIBILITY_LIST_DOWNLOAD=OFF",
                 "-DUSE_SYSTEM_SDL2=ON"
             ],
