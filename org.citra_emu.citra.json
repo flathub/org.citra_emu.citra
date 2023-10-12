@@ -23,6 +23,18 @@
         "--filesystem=host:ro",
         "--filesystem=xdg-run/app/com.discordapp.Discord:ro"
     ],
+    "cleanup": [
+        "/include",
+        "/bin/glslangValidator",
+        "/bin/glslang",
+        "/lib/pkgconfig",
+        "/lib/cmake",
+        "/share/doc",
+        "/share/man",
+        "/src",
+        "*.a",
+        "*.la"
+    ],
     "modules": [
         "shared-modules/libusb/libusb.json",
         "shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json",
