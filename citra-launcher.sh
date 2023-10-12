@@ -13,7 +13,6 @@ EOF
     zenity --warning --no-wrap --title "That's awkward ..." --text "$MESSAGE"
 }
 
-export QT_QPA_PLATFORM=xcb
 unset VK_ICD_FILENAMES VK_DRIVER_FILES
 # Discord RPC
 for i in {0..9}; do
