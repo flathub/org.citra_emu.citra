@@ -27,6 +27,8 @@
         "/include",
         "/bin/glslangValidator",
         "/bin/glslang",
+        "/bin/spirv-*",
+        "/bin/sdl2-config",
         "/lib/pkgconfig",
         "/lib/cmake",
         "/share/doc",
@@ -37,7 +39,7 @@
     ],
     "modules": [
         "shared-modules/libusb/libusb.json",
-        "shared-modules/SDL2/SDL2-2.26.1-with-libdecor.json",
+        "shared-modules/SDL2/SDL2-with-libdecor.json",
         {
             "name": "glslang",
             "buildsystem": "cmake-ninja",
@@ -54,6 +56,30 @@
                         "stable-only": true,
                         "project-id": 205796,
                         "url-template": "https://github.com/KhronosGroup/glslang/archive/$version.tar.gz"
+                    }
+                },
+                {
+                    "type": "archive",
+                    "url": "https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/sdk-1.3.261.1.tar.gz",
+                    "sha256": "ead95c626ad482882a141d1aa0ce47b9453871f72c42c0b28d39c82f60a52008",
+                    "dest": "External/spirv-tools",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "stable-only": true,
+                        "project-id": 334920,
+                        "url-template": "https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/sdk-$version.tar.gz"
+                    }
+                },
+                {
+                    "type": "archive",
+                    "url": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.261.1.tar.gz",
+                    "sha256": "32b4c6ae6a2fa9b56c2c17233c8056da47e331f76e117729925825ea3e77a739",
+                    "dest": "External/spirv-tools/external/spirv-headers",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "stable-only": true,
+                        "project-id": 334920,
+                        "url-template": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-$version.tar.gz"
                     }
                 }
             ]
