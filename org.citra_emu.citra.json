@@ -11,7 +11,7 @@
             "CI": "1",
             "GITHUB_ACTIONS": "1",
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
-            "GITHUB_REF_NAME": "nightly-2012"
+            "GITHUB_REF_NAME": "nightly-2013"
         }
     },
     "finish-args": [
@@ -49,8 +49,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/KhronosGroup/glslang/archive/13.1.0.tar.gz",
-                    "sha256": "926808f4bf129264a1b7d969978881ec041bb902ad49a180ba74270df7178494",
+                    "url": "https://github.com/KhronosGroup/glslang/archive/13.1.1.tar.gz",
+                    "sha256": "1c4d0a5a38c8aaf89a2d7e6093be734320599f5a6775b2726beeb05b0c054e66",
                     "x-checker-data": {
                         "type": "anitya",
                         "stable-only": true,
@@ -138,8 +138,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-2012/citra-unified-source-20231017-1caf569.tar.xz",
-                    "sha256": "b2f1782e72b3ec8184c95b1a873ff9da8e5c9b8e34135df8112ffebc05e71d6d",
+                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-2013/citra-unified-source-20231018-ef43776.tar.xz",
+                    "sha256": "1bd95036b6356e6a44866b8742ac1e8918b00476a480525602fb82ef10adddb3",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/citra-emu/citra-nightly/releases/latest",
