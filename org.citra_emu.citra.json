@@ -3,6 +3,7 @@
     "runtime": "org.kde.Platform",
     "runtime-version": "6.5",
     "sdk": "org.kde.Sdk",
+    "sdk-extensions" : [ "org.freedesktop.Sdk.Extension.llvm16" ],
     "command": "citra-launcher",
     "rename-desktop-file": "citra-qt.desktop",
     "rename-icon": "citra",
@@ -12,7 +13,11 @@
             "GITHUB_ACTIONS": "1",
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
             "GITHUB_REF_NAME": "nightly-2020"
-        }
+        },
+        "append-path": "/usr/lib/sdk/llvm16/bin",
+        "prepend-ld-library-path": "/usr/lib/sdk/llvm16/lib",
+        "cflags": "-Wno-unused-command-line-argument",
+        "cxxflags": "-Wno-unused-command-line-argument"
     },
     "finish-args": [
         "--device=all",
@@ -115,6 +120,9 @@
             "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_C_COMPILER=clang",
+                "-DCMAKE_CXX_COMPILER=clang++",
+                "-DCMAKE_LINKER=lld",
                 "-DENABLE_QT_TRANSLATION=ON",
                 "-DCITRA_ENABLE_COMPATIBILITY_REPORTING=ON",
                 "-DUSE_DISCORD_PRESENCE=ON",
