@@ -1,9 +1,9 @@
 {
     "app-id": "org.citra_emu.citra",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.5",
+    "runtime-version": "6.6",
     "sdk": "org.kde.Sdk",
-    "sdk-extensions" : [ "org.freedesktop.Sdk.Extension.llvm16" ],
+    "sdk-extensions" : [ "org.freedesktop.Sdk.Extension.llvm17" ],
     "command": "citra-launcher",
     "rename-desktop-file": "citra-qt.desktop",
     "rename-icon": "citra",
