@@ -3,7 +3,9 @@
     "runtime": "org.kde.Platform",
     "runtime-version": "6.6",
     "sdk": "org.kde.Sdk",
-    "sdk-extensions" : [ "org.freedesktop.Sdk.Extension.llvm17" ],
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.llvm17"
+    ],
     "command": "citra-launcher",
     "rename-desktop-file": "citra-qt.desktop",
     "rename-icon": "citra",
@@ -12,7 +14,7 @@
             "CI": "1",
             "GITHUB_ACTIONS": "1",
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
-            "GITHUB_REF_NAME": "nightly-2020"
+            "GITHUB_REF_NAME": "nightly-2021"
         },
         "append-path": "/usr/lib/sdk/llvm16/bin",
         "prepend-ld-library-path": "/usr/lib/sdk/llvm16/lib",
@@ -146,8 +148,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-2020/citra-unified-source-20231025-b231a22.tar.xz",
-                    "sha256": "ff45833f97d7545be22cc4be3fc75ef88f9e64fdbd93b61450d7c9de40e87d1b",
+                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-2021/citra-unified-source-20231031-d3ce437.tar.xz",
+                    "sha256": "c03951a880ff08002e195a971eac17f6ce39b8a12657ed95cad2a4aa7fc7dc3e",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/citra-emu/citra-nightly/releases/latest",
