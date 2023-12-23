@@ -14,7 +14,7 @@
             "CI": "1",
             "GITHUB_ACTIONS": "1",
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
-            "GITHUB_REF_NAME": "nightly-2058"
+            "GITHUB_REF_NAME": "nightly-2059"
         },
         "append-path": "/usr/lib/sdk/llvm16/bin",
         "prepend-ld-library-path": "/usr/lib/sdk/llvm16/lib",
@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/KhronosGroup/glslang/archive/13.1.1.tar.gz",
-                    "sha256": "1c4d0a5a38c8aaf89a2d7e6093be734320599f5a6775b2726beeb05b0c054e66",
+                    "url": "https://github.com/KhronosGroup/glslang/archive/14.0.0.tar.gz",
+                    "sha256": "80bbb916a23e94ea9cbfb1acb5d1a44a7e0c9613bcf5b5947c03f2273bdc92b0",
                     "x-checker-data": {
                         "type": "anitya",
                         "stable-only": true,
@@ -148,8 +148,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-2058/citra-unified-source-20231221-f177433.tar.xz",
-                    "sha256": "ed9d0c054d9fd0e3f1954f0f320ae8da94eba237ee5d5f440f65145019a8d32e",
+                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-2059/citra-unified-source-20231222-178e602.tar.xz",
+                    "sha256": "f1bdfd3524f253593a3d540a329f7c29c838900465ca4a43dc8b291e2d9ffc39",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/citra-emu/citra-nightly/releases/latest",
