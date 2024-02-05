@@ -16,8 +16,8 @@
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
             "GITHUB_REF_NAME": "nightly-2089"
         },
-        "append-path": "/usr/lib/sdk/llvm16/bin",
-        "prepend-ld-library-path": "/usr/lib/sdk/llvm16/lib",
+        "append-path": "/usr/lib/sdk/llvm17/bin",
+        "prepend-ld-library-path": "/usr/lib/sdk/llvm17/lib",
         "cflags": "-Wno-unused-command-line-argument",
         "cxxflags": "-Wno-unused-command-line-argument"
     },
