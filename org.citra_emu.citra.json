@@ -14,7 +14,7 @@
             "CI": "1",
             "GITHUB_ACTIONS": "1",
             "GITHUB_REPOSITORY": "citra-emu/citra-nightly",
-            "GITHUB_REF_NAME": "nightly-2090"
+            "GITHUB_REF_NAME": "nightly-2091"
         },
         "append-path": "/usr/lib/sdk/llvm16/bin",
         "prepend-ld-library-path": "/usr/lib/sdk/llvm16/lib",
@@ -148,8 +148,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-2090/citra-unified-source-20240205-1978435.tar.xz",
-                    "sha256": "32df7961face8b3b5e1e74aadd3180b56dcf1e7bfc7d8ffdd3a27cd6f8e4c21b",
+                    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-2091/citra-unified-source-20240207-1165a70.tar.xz",
+                    "sha256": "4cf092edc9b93bb2853442b13ba65de67fd23bc0050717971909009329258727",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/citra-emu/citra-nightly/releases/latest",
