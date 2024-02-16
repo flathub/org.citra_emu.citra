@@ -26,10 +26,10 @@
   <url type="contact">https://community.citra-emu.org/</url>
   <url type="contribute">https://github.com/citra-emu/citra/wiki/Contributing#contributing</url>
   <screenshots>
-    <screenshot type="default">https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/01-Super%20Mario%203D%20Land.jpg</screenshot>
-    <screenshot>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/02-Mario%20Kart%207.jpg</screenshot>
-    <screenshot>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/28-The%20Legend%20of%20Zelda%20Ocarina%20of%20Time%203D.jpg</screenshot>
-    <screenshot>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/35-Pok%C3%A9mon%20ORAS.png</screenshot>
+    <screenshot type="default"><image>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/01-Super%20Mario%203D%20Land.jpg</image></screenshot>
+    <screenshot><image>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/02-Mario%20Kart%207.jpg</image></screenshot>
+    <screenshot><image>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/28-The%20Legend%20of%20Zelda%20Ocarina%20of%20Time%203D.jpg</image></screenshot>
+    <screenshot><image>https://raw.githubusercontent.com/citra-emu/citra-web/master/images/screenshots/35-Pok%C3%A9mon%20ORAS.png</image></screenshot>
   </screenshots>
   <releases>
     <release version="nightly-2095" date="2024-02-15"/>
@@ -302,7 +302,7 @@
     <release date="2021-02-21" version="nightly-1695"/>
   </releases>
   <categories>
-    <category>Games</category>
+    <category>Game</category>
     <category>Emulator</category>
   </categories>
   <developer_name>Citra Emulator Team</developer_name>
